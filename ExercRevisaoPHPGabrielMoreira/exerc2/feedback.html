@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback de Produtos</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <form action="processar_feedback.php" method="POST">
+        <h1>Feedback de Produto</h1>
+
+        <label for="produto">Nome do Produto:</label>
+        <input type="text" id="produto" name="produto" required>
+
+        <label for="nota">Nota:</label>
+        <div class="rating">
+            <input type="radio" id="estrela5" name="nota" value="5">
+            <label for="estrela5" title="5 estrelas">★</label>
+
+            <input type="radio" id="estrela4" name="nota" value="4">
+            <label for="estrela4" title="4 estrelas">★</label>
+
+            <input type="radio" id="estrela3" name="nota" value="3">
+            <label for="estrela3" title="3 estrelas">★</label>
+
+            <input type="radio" id="estrela2" name="nota" value="2">
+            <label for="estrela2" title="2 estrelas">★</label>
+
+            <input type="radio" id="estrela1" name="nota" value="1">
+            <label for="estrela1" title="1 estrela">★</label>
+        </div>
+
+        <label for="comentario">Comentário:</label>
+        <textarea id="comentario" name="comentario" required></textarea>
+
+        <button type="submit">Enviar Feedback</button>
+    </form>
+</body>
+</html>
